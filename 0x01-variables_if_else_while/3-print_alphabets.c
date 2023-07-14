@@ -1,5 +1,14 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Discription: A C program that prints the number is positive or negative
+ *
+ * Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int i, y;
@@ -9,4 +18,5 @@ int main(void)
 	printf("\n");
 	for (y = 65; y < 91; y++)
 		putchar(y);
+	return (0);
 }
