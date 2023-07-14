@@ -1,0 +1,20 @@
+
+r.txt
+0-positive_or_negative.c: In function ‘main’:
+0-positive_or_negative.c:14:3: error: implicit declaration of function ‘printf’ [-Werror=implicit-function-declaration]
+   14 |   printf("%d is zero", n);
+      |   ^~~~~~
+0-positive_or_negative.c:14:3: error: incompatible implicit declaration of built-in function ‘printf’ [-Werror]
+0-positive_or_negative.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <time.h>
+  +++ |+#include <stdio.h>
+    3 | /* more headers goes there */
+0-positive_or_negative.c:18:3: error: incompatible implicit declaration of built-in function ‘printf’ [-Werror]
+   18 |   printf("%d is positive", n);
+      |   ^~~~~~
+0-positive_or_negative.c:18:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+0-positive_or_negative.c:22:3: error: incompatible implicit declaration of built-in function ‘printf’ [-Werror]
+   22 |   printf("%d is negative", n);
+      |   ^~~~~~
+0-positive_or_negative.c:22:3: note: include ‘<stdio.h>’ or provide a declaratio...
+
