@@ -8,7 +8,7 @@ int main(void)
 	{
 	if (i == 101)
 		continue;
-	if else(i == 113)
+	else if (i == 113)
 		continue;
 	else
 		putchar(i);
