@@ -6,22 +6,26 @@
  * including n and 98
  *
  * @n: check the input of function
+*
 */
 void print_to_98(int n)
 {
 	int i;
 
-	putchar(n + '0');
-	for (i = n + 1; i <= 98; i++)
+	if (n < 98)
 	{
-	putchar(',');
-	putchar(' ');
-	if (i > 9)
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d, ", i);
+		}
+	}
+	else if (n > 98)
 	{
-	putchar(i / 10 + '0');
-	putchar(i % 10 + '0');
+		for (i = n; i >= 98; i--)
+		{
+			printf("%d, ", i);
+		}
 	}
 	else
-	putchar(i + '0');
-	}
+		printf("98");
 }
