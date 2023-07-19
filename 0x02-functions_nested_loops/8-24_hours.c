@@ -2,26 +2,22 @@
 #include <stdio.h>
 
 /**
- * times_table-function prints nine times the number from 0 to 9 with increment
+ * jack_bauer- function prints the time of the all day minute and hours
 */
-void times_table(void)
+void jack_bauer(void)
 {
-	int i, j, value;
+	int i, j;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0 ; i <= 23 ; i++)
 	{
-	_putchar(48);
-	for (j = 1; j <= 9; j++)
+	for (j = 0 ; j <= 59 ; j++)
 	{
-	_putchar(',');
-	_putchar(' ');
-	value = i * j;
-	if (value <= 9)
-	_putchar(' ');
-	else
-	_putchar(value / 10 + '0');
-	_putchar(value % 10 + '0');
-	}
+	_putchar((i / 10) + '0');
+	_putchar((i % 10) + '0');
+	_putchar(':');
+	_putchar((j / 10) + '0');
+	_putchar((j % 10) + '0');
 	_putchar('\n');
+	}
 	}
 }
