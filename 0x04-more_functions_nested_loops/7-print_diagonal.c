@@ -1,26 +1,25 @@
-#include"main.h"
-
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+#include "main.h"
 /**
- * print_diagonal - print a diagonal line
+ * print_diagonal -  function takes input n and prints this \ n times at the
+ * shape of diagonal and the \n if n is 0 or negative prints \n only
  *
- * @n: is the number of times the \ character
- *     should be printed
+ * @n: check the input of the function
 */
-
 void print_diagonal(int n)
 {
-	int postn, space;
+	int i, j;
 
 	if (n <= 0)
-		_putchar('\n');
+	_putchar('\n');
 	else
 	{
-		for (postn = 1; postn <= n; ++postn)
-		{
-			for (space = 1; space <= postn; ++space)
-				_putchar(' ');
-			_putchar(92); /*is equal to '/' char*/
-			_putchar('\n');
-		}
+	for (i = 0; i < n; i++)
+	{
+	for (j = n; j > n - i; j--)
+	_putchar(' ');
+	_putchar('\\');
+	_putchar('\n');
 	}
-}
